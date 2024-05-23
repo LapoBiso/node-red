@@ -1,1 +1,58 @@
-[]
+[
+    {
+        "id": "e91d353343be06e7",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "350d44a2a9f6f2e6",
+        "type": "http in",
+        "z": "e91d353343be06e7",
+        "name": "helloworld",
+        "url": "/hello",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "d7f7ec8e2531c52d"
+            ]
+        ]
+    },
+    {
+        "id": "d7f7ec8e2531c52d",
+        "type": "function",
+        "z": "e91d353343be06e7",
+        "name": "function 1",
+        "func": "msg.payload = \"Hello World\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 200,
+        "wires": [
+            [
+                "0dce47c80a7334e2"
+            ]
+        ]
+    },
+    {
+        "id": "0dce47c80a7334e2",
+        "type": "http response",
+        "z": "e91d353343be06e7",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 450,
+        "y": 200,
+        "wires": []
+    }
+]
