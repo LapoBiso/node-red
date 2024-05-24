@@ -29,7 +29,7 @@
         "type": "function",
         "z": "e91d353343be06e7",
         "name": "function 1",
-        "func": "msg.payload = \"Hello World on AWS virtual machine!\"\nreturn msg;",
+        "func": "msg.payload = \"Hello World on local using git!\"\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
